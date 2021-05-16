@@ -36,7 +36,7 @@ object ProblemsApplyHOF {
    * findMin soll das kleinste Element einer Liste finden
     */
   def findMin(l: IntList): Int = {
-    var kleinstes: Int = liste(0)
+    var kleinstes: Int = l(0)
     for (k <- l if k < kleinstes) {
       kleinstes = k
     }
